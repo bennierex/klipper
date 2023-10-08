@@ -3555,7 +3555,12 @@ run_current:
 #driver_SEDN: 0
 #driver_SEIMIN: 0
 #driver_SFILT: 0
-#driver_SG4_ANGLE_OFFSET: 1
+#driver_TPWMTHRS: 0
+#driver_TCOOLTHRS: 0
+#driver_THIGH: 0
+#driver_SG4_THRS: 0
+#driver_SG4_FILT_EN: False
+#driver_SG4_ANGLE_OFFSET: True
 #   Set the given register during the configuration of the TMC2240
 #   chip. This may be used to set custom motor parameters. The
 #   defaults for each parameter are next to the parameter name in the

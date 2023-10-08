@@ -399,10 +399,18 @@ class TMC2240:
         set_config_field(config, "freewheel", 0)
         set_config_field(config, "pwm_reg", 4)
         set_config_field(config, "pwm_lim", 12)
+        #   TPWMTHRS
+        set_config_field(config, "tpwmthrs", 0)
+        #   TCOOLTHRS
+        set_config_field(config, "tcoolthrs", 0)
+        #   THIGH
+        set_config_field(config, "thigh", 0)
         #   TPOWERDOWN
         set_config_field(config, "tpowerdown", 10)
         #   SG4_THRS
-        set_config_field(config, "sg4_angle_offset", 1)
+        set_config_field(config, "sg4_thrs", 0)
+        set_config_field(config, "sg4_filt_en", False)
+        set_config_field(config, "sg4_angle_offset", True)
 
 def load_config_prefix(config):
     return TMC2240(config)
